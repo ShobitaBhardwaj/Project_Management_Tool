@@ -1,0 +1,315 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-theme {
+    background-color: #e9ecef;
+    color: #343a40;
+}
+
+body.dark-theme {
+    background-color: #343a40;
+    color: #e9ecef;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-theme .container {
+    background: #495057;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: inherit;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-bottom: 80px;
+}
+
+body.dark-theme .navbar {
+    background: #0056b3;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.theme-toggle-btn {
+    background: #ffffff;
+    color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme .theme-toggle-btn {
+    background: #495057;
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #007bff;
+    color: #ffffff;
+    margin-top: 100px;
+    
+}
+
+body.dark-theme footer {
+    background: #0056b3;
+}
+
+/* Project Form */
+.project-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.project-form input {
+    width: 70%;
+    padding: 15px;
+    margin-right: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: border-color 0.3s;
+}
+
+body.dark-theme .project-form input {
+    background: #6c757d;
+    border-color: #495057;
+    color: #ffffff;
+}
+
+.project-form input:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+.project-form button {
+    padding: 15px 20px;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.project-form button:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+/* Project */
+.project {
+    background: #f8f9fa;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    position: relative;
+}
+
+body.dark-theme .project {
+    background: #6c757d;
+    border-color: #495057;
+}
+
+.project:hover {
+    transform: scale(1.02);
+    background-color: #e8eaec;
+}
+
+.project h2 {
+    margin: 0 0 20px;
+    color: inherit;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.project-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .remove-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: #343a40;
+}
+
+.edit-btn:hover {
+    background: #e0a800;
+    transform: translateY(-2px);
+}
+
+.remove-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.remove-btn:hover {
+    background: #c82333;
+    transform: translateY(-2px);
+}
+
+/* Task Form */
+.task-form {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.task-form input[type="text"],
+.task-form input[type="date"] {
+    width: calc(50% - 5px);
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: border-color 0.3s;
+}
+
+body.dark-theme .task-form input {
+    background: #6c757d;
+    border-color: #495057;
+    color: #ffffff;
+}
+
+.task-form input:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+.task-form button {
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.task-form button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Task */
+.task {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+body.dark-theme .task {
+    background: #4f555b;
+    border-color: #6c757d;
+}
+
+.task.complete {
+    background: #64ed84;
+    border-color: #c3e6cb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .task.complete {
+    background: #38ca5a;
+    border-color: #1b1e21;
+}
+
+.task-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.task-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.task-buttons .edit-btn {
+    background: #ffc107;
+    color: #343a40;
+}
+
+.task-buttons .edit-btn:hover {
+    background: #e0a800;
+    transform: translateY(-2px);
+}
+
+.task-buttons .remove-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.task-buttons .remove-btn:hover {
+    background: #c82333;
+    transform: translateY(-2px);
+}
+
+.task-buttons button:hover {
+    transform: translateY(-2px);
+}

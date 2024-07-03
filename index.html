@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <nav class="navbar">
+        <h1>Project Management</h1>
+        <button class="theme-toggle-btn" onclick="toggleTheme()">Toggle Theme</button>
+    </nav>
+    <div class="container">
+        <div class="project-form">
+            <input type="text" id="projectName" placeholder="Project Name">
+            <button onclick="createProject()">Create Project</button>
+        </div>
+        <div id="projects"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Project Management Tool. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
